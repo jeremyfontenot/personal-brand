@@ -1,0 +1,128 @@
+/* Basic Resets */
+body, h1, h2, h3, p, ul, li, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #051622; /* Dark navy blue for background */
+    color: #DEB992; /* Soft beige for text */
+    padding: 20px;
+}
+
+header {
+    background: #1BA098; /* Teal for the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #051622; /* Dark navy blue for headings */
+    border-bottom: 2px solid #1BA098; /* Teal for underline */
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Thumbnail links for projects */.project-thumbnails a {
+    display: inline-block;
+    background: #1BA098; /* Teal */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align the text and images within */
+}
+
+.project-thumbnails img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area, might crop */
+    border-radius: 5px; /* Optional: Adds rounded corners to your images */
+    margin-top: 10px; /* Adds some space above each image */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #051622; /* Dark navy blue */
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for inputs */
+    color: #051622; /* Dark text for contrast */
+    border: 1px solid #DEB992; /* Soft border using beige */
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1BA098; /* Teal for button */
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #DEB992; /* Soft beige for hover */
+    color: #051622; /* Dark text for visibility */
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin: auto;
+    }
+
+    header h1, header p {
+        text-align: left;
+    }
+}
